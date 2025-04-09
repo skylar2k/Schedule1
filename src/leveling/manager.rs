@@ -24,6 +24,6 @@ impl LevelManager {
                 );
             }
         }
-        (self.order_limit_multiplier() + 0.1 * (self.tier as f32 - 1.0)).clamp(1.0, 10.0)
+        (self.rank.order_multiplier() + 0.1 * (self.tier as f32 - 1.0)).clamp(1.0, 10.0)
     }
 }
